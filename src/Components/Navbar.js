@@ -4,7 +4,6 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { FaUser, FaSignInAlt, FaSignOutAlt, FaSearch } from "react-icons/fa";
 
 function NAV_BAR() {
   return (
@@ -39,7 +38,6 @@ function NAV_BAR() {
           </Nav>
           <div className="d-flex align-items-center right-navbar">
             <NavDropdown
-              title={<FaUser />}
               id="navbarScrollingDropdown"
               className="ms-3"
             >
@@ -59,7 +57,7 @@ function NAV_BAR() {
                 title="Sign In"
                 href="#signIn"
               >
-                <FaSignInAlt className="mx-1" />
+                Sign In
               </Button>
               <Button
                 variant="outline-success"
@@ -67,7 +65,7 @@ function NAV_BAR() {
                 title="Sign Out"
                 href="#logout"
               >
-                <FaSignOutAlt className="mx-1" />
+                Sign Out
               </Button>
             </div>
             <Form className="d-flex ms-3">
@@ -79,7 +77,7 @@ function NAV_BAR() {
                 style={{ width: "200px" }}
               />
               <Button variant="outline-success">
-                <FaSearch />
+                Search
               </Button>
             </Form>
           </div>
